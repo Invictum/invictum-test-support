@@ -24,8 +24,8 @@ public class GotoLocatorAction extends AnAction {
             /* Determinate method name and parent class context */
             PsiClass clazz = PsiTreeUtil.getParentOfType(element, PsiClass.class);
             PsiMethodCallExpression method = PsiTreeUtil.getParentOfType(element, PsiMethodCallExpression.class);
-            e.getPresentation().setEnabled(method != null && clazz != null && InvictumMethodsUtil
-                    .isMethodCompatible(method) && InvictumMethodsUtil.isClassCompatible(clazz));
+            e.getPresentation().setEnabled(method != null && clazz != null && InvictumEssentialsUtil
+                    .isMethodCompatible(method) && InvictumEssentialsUtil.isClassCompatible(clazz));
         }
     }
 

@@ -3,7 +3,7 @@
     <id>com.github.invictum.idea.support</id>
     <name>Invictum Test Framework support</name>
     <version>1.0.0</version>
-    <vendor email="zim182@gmail.com" url="https://github.com/Invictum/invictum-test">Invictum</vendor>
+    <vendor email="zim182@gmail.com" url="https://github.com/Invictum/invictum-test-support">Invictum</vendor>
 
     <description><![CDATA[
       Assists with Invictum test automation framework.<br>
@@ -11,7 +11,7 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      Initial plugin version.<br>
+      Initial plugin release.<br>
       No release notes yet :)
     ]]>
     </change-notes>

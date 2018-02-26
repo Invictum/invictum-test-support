@@ -6,7 +6,7 @@ import com.intellij.psi.PsiMethodCallExpression;
 
 import java.util.stream.Stream;
 
-public class InvictumMethodsUtil {
+public class InvictumEssentialsUtil {
 
     /* Define a list of Invictum framework essential methods */
     private static final String[] methods = new String[]{
