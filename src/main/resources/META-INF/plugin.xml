@@ -1,11 +1,13 @@
 <idea-plugin>
+
     <id>com.github.invictum.idea.support</id>
     <name>Invictum Test Framework support</name>
     <version>1.0.0</version>
     <vendor email="zim182@gmail.com" url="https://github.com/Invictum/invictum-test">Invictum</vendor>
 
     <description><![CDATA[
-      Adds support for Invictum test framework.<br>
+      Assists with Invictum test automation framework.<br>
+      Adds Go To Locator menu item. Allows jump to related YML with locators markup from Page or Panel classes.<br>
     ]]></description>
 
     <change-notes><![CDATA[
@@ -14,7 +16,6 @@
     ]]>
     </change-notes>
 
-    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
     <idea-version since-build="173.0"/>
 
     <extensions defaultExtensionNs="com.github.invictum.idea.support">
@@ -22,11 +23,12 @@
     </extensions>
 
     <actions>
-        <action id="InvictumSupport.GoToLocator" class="com.github.invictum.idea.support.GotoLocator"
+        <action id="InvictumSupport.GoToLocator" class="com.github.invictum.idea.support.GotoLocatorAction"
                 text="Go To Locator"
-                description="Go to locator in YML file">
+                description="Go to locator in YML markup file">
             <add-to-group group-id="GoToCodeGroup" anchor="before" relative-to-action="GotoDeclaration"/>
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta B"/>
         </action>
     </actions>
+
 </idea-plugin>
